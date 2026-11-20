@@ -11,6 +11,8 @@ public abstract class Persona {
         this.SalBas = SalBas;
     }
     
+    
+    
     public void calcSal(){
         
     }
