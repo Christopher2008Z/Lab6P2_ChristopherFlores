@@ -89,6 +89,11 @@ public class Menu extends javax.swing.JFrame {
         );
 
         jButton4.setText("Nuevo Portero");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
 
         jButton5.setText("Nuevo Jugador");
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -197,6 +202,12 @@ public class Menu extends javax.swing.JFrame {
         ventana.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        RegisPort ventana = new RegisPort();
+        ventana.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton4MouseClicked
 
     /**
      * @param args the command line arguments
