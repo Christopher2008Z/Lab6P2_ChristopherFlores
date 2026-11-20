@@ -103,6 +103,11 @@ public class Menu extends javax.swing.JFrame {
         });
 
         jButton6.setText("Stats");
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
 
         jButton7.setText("Ver Plantel");
         jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -219,6 +224,12 @@ public class Menu extends javax.swing.JFrame {
         ventana.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton7MouseClicked
+
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
+        Stats ventana = new Stats();
+        ventana.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton6MouseClicked
 
     /**
      * @param args the command line arguments
